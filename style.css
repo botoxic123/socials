@@ -78,7 +78,6 @@ ul li a:hover{
     opacity: .7;
 }
 .credit{
-    position: absolute;
     bottom: 0;
     padding: 1em 0;
     display: flex;
