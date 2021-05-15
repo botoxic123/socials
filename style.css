@@ -26,7 +26,7 @@ body{
     width: 20%;
     margin: auto;
     display: block;
-    fill: var(--primaryColor);
+
     padding: 3em 0;
 }
 h1{
@@ -48,6 +48,7 @@ ul li{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    align-items: center;
     width: 100vw;
 }
 ul li::after{
@@ -62,13 +63,19 @@ ul li:last-child{
     margin-top: 5px;
     border-top: 1px solid var(--primaryColor);
 }
+.icon{
+    width: 2em;
+    display: block;
+    fill: var(--primaryColor);
+    margin-right: 1em;
+}
 ul li a{
     list-style-type: none;
     text-decoration: none;
     font-family: 'Sequel 100 Wide Regular';
     color: var(--mainColor);
     font-size: 2em;
-    margin: calc(1em / 3) 0 0 0;
+    margin: calc(1em / 6) 0;
     display: inline-block;
     transition: transform .3s;
     text-align: center;
