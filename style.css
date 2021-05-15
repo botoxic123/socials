@@ -1,0 +1,98 @@
+@font-face{
+    font-family: 'Sequel 100 Wide Regular';
+    src: url('fonts/Sequel100Wide-45.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Sequel 100 Wide Bold';
+    src: url('fonts/Sequel100Wide-85.ttf') format('truetype');
+    font-weight: 700;
+}
+:root {
+    --primaryColor: #F200FF;
+    --secondaryColor: #090009;
+    --mainColor: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    background-color: var(--secondaryColor);
+}
+.logo{
+    width: 20%;
+    margin: auto;
+    display: block;
+    fill: var(--primaryColor);
+    padding: 3em 0;
+}
+h1{
+    font-family: 'Sequel 100 Wide Bold';
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 3em;
+    margin: calc(1em / 3) 0 0 0;
+}
+h1::after{
+    content: '';
+    height: 1px;
+    width: 100vw;
+    background-color: var(--primaryColor);
+    display: block;
+    margin: calc(1em / 3) 0 0 0;
+}
+ul li{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+ul li::after{
+    content: '';
+    height: 1px;
+    width: 100vw;
+    background-color: var(--primaryColor);
+    display: block;
+    margin: calc(1em / 3) 0 0 0;
+}
+ul li:last-child{
+    margin-top: 5px;
+    border-top: 1px solid var(--primaryColor);
+}
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Sequel 100 Wide Regular';
+    color: var(--mainColor);
+    font-size: 2em;
+    margin: calc(1em / 3) 0 0 0;
+    display: inline-block;
+    transition: transform .3s;
+    text-align: center;
+}
+ul li a:hover{
+    transform: translateX(calc(1em / 3));
+    opacity: .7;
+}
+.credit{
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Sequel 100 Wide Regular';
+    background-color: var(--secondaryColor);
+}
+.credit p, .credit a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+@media all and (max-width: 650px){
+    .logo{
+        width: 50%;
+    }
+}
